@@ -2,104 +2,50 @@
 
 ## Project Overview
 
-This project aims to develop an explainable multimodal machine learning framework for Parkinson's disease detection and severity prediction using multiple clinical biomarkers, including speech features, handwriting features, age, and gender. The proposed framework integrates multimodal data sources to improve diagnostic accuracy, provide severity-level assessment, and enhance interpretability through Explainable Artificial Intelligence (XAI) techniques.
+This repository is being organized as a documentation-first phase for an explainable Parkinson's Disease decision support system. The current phase focuses on literature review, research gap identification, methodology planning, dataset analysis, and architecture planning.
 
----
+## Current Scope
 
-## Research Gap
+The following components are included in this phase:
 
-Existing Parkinson's disease prediction models primarily rely on speech-based biomarkers and binary classification approaches. These methods do not fully capture multiple clinical manifestations of Parkinson's disease, such as handwriting abnormalities and demographic influences. Furthermore, most existing systems lack severity prediction and modality-wise explainability, limiting their clinical usefulness.
+- `README.md`
+- `requirements.txt`
+- `.gitignore`
+- `docs/`
+- `research_papers/`
+- `datasets/`
+- `diagrams/`
 
----
+Code implementation folders such as `src/`, `models/`, and `notebooks/` will be added in later phases.
 
-## Problem Statement
+## Planned Project Structure
 
-Current Parkinson's disease prediction systems focus mainly on speech analysis and provide only binary outcomes (Parkinson's Disease or Healthy). Such approaches fail to leverage complementary biomarkers and do not offer comprehensive severity assessment. Therefore, there is a need for an explainable multimodal framework that integrates speech, handwriting, age, and gender features to improve diagnostic performance, severity prediction, and model interpretability.
-
----
-
-## Proposed Solution
-
-The proposed framework combines:
-
-* Speech Analysis using OpenSMILE
-* Handwriting Analysis using ResNet50 CNN
-* Demographic Features (Age and Gender)
-* Multimodal Feature Fusion
-* Feature Selection using RFE and XGBoost Ranking
-* Parkinson's Disease Severity Prediction using XGBoost Multi-Class Classification
-* SHAP-Based Explainable AI
-* Modality Contribution Analysis
-
----
-
-## Expected Outputs
-
-* Parkinson's Disease Risk Prediction
-* Severity Classification
-
-  * Healthy
-  * Mild Parkinson's
-  * Moderate Parkinson's
-  * Severe Parkinson's
-* Feature Importance Analysis
-* Modality Contribution Analysis
-* SHAP Explainability Report
-* Clinical Decision Support Report
-
----
-
-## Technology Stack
-
-* Python
-* Jupyter Notebook
-* OpenSMILE
-* ResNet50 CNN
-* XGBoost
-* SHAP
-* Scikit-learn
-* Pandas
-* NumPy
-* Matplotlib
-
----
-
-## Methodology Workflow
-
-1. Data Collection
-
-   * Speech Data
-   * Handwriting Data
-   * Age
-   * Gender
-
-2. Data Preprocessing
-
-   * Audio Cleaning
-   * Image Cleaning
-   * Data Normalization
-
-3. Feature Extraction
-
-   * Speech Features
-   * Handwriting Features
-   * Demographic Features
-
-4. Multimodal Feature Fusion
-
-5. Feature Selection
-
-6. XGBoost-Based Classification
-
-7. Severity Prediction
-
-8. SHAP Explainability
-
-9. Modality Contribution Analysis
-
-10. Clinical Report Generation
-
----
+```
+Parkinson-Decision-Support-System
+| README.md
+| requirements.txt
+| .gitignore
+|
++-- docs
+|   +-- problem_statement.md
+|   +-- objectives.md
+|   +-- literature_survey.md
+|   +-- research_gap.md
+|   +-- methodology.md
+|   +-- architecture.md
+|
++-- research_papers
+|   +-- Base_Paper.pdf
+|   +-- Paper2.pdf
+|   +-- Paper3.pdf
+|
++-- datasets
+|   +-- dataset_analysis.md
+|
++-- diagrams
+|   +-- methodology.png
+|   +-- architecture.png
+```
 
 ## Team Members
 
