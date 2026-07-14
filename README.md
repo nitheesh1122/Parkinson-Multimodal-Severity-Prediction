@@ -112,4 +112,6 @@ The proposed framework combines:
 ## Project Status
 
 **Phase 1:** Literature Survey, Dataset Analysis, Research Gap Identification, and Methodology Design
+
+Literature survey details: [LITERATURE_SURVEY.md](LITERATURE_SURVEY.md)
 ---
