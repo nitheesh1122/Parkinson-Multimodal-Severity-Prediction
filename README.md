@@ -1,74 +1,154 @@
-# Explainable Multimodal Framework for Parkinson's Disease Detection and Severity Prediction Using Speech, Handwriting, Age, and Gender Features
+# Explainable AI Decision Support Framework for Parkinson's Disease Detection Using Speech Biomarkers
 
 ## Project Overview
 
-This repository is being organized as a documentation-first phase for an explainable Parkinson's Disease decision support system. The current phase focuses on literature review, research gap identification, methodology planning, dataset analysis, and architecture planning.
+This project aims to develop an Explainable AI-based Decision Support Framework for the early detection of Parkinson's Disease using speech biomarkers. The proposed framework leverages machine learning and Explainable AI (XAI) to provide accurate Parkinson's disease prediction along with an interpretable AI Decision Support Report.
 
-## Current Scope
+Unlike conventional Parkinson's disease prediction systems that provide only binary classification, the proposed framework focuses on generating transparent and clinically interpretable outputs by combining optimized speech feature selection, explainable machine learning, and structured decision support.
 
-The following components are included in this phase:
+---
 
-- `README.md`
-- `requirements.txt`
-- `.gitignore`
-- `docs/`
-- `research_papers/`
-- `datasets/`
-- `diagrams/`
+## Objectives
 
-Code implementation folders such as `src/`, `models/`, and `notebooks/` will be added in later phases.
+- Develop an AI-based framework for Parkinson's disease detection using speech biomarkers.
+- Optimize speech features using Recursive Feature Elimination (RFE) and XGBoost Feature Importance.
+- Train an XGBoost classifier for Parkinson's disease prediction.
+- Apply SHAP Explainable AI to interpret model predictions.
+- Generate an AI Decision Support Report containing prediction probability, confidence score, speech biomarker summary, and explainability results.
 
-## Quick Links
+---
 
-- Documentation index: `docs/README.md`
-- Literature survey: `docs/literature_survey.md`
-- Research gap: `docs/research_gap.md`
-- Methodology write-up: `docs/methodology.md`
-- Architecture write-up: `docs/architecture.md`
-- Dataset analysis: `datasets/dataset_analysis.md`
-- Methodology diagram: `diagrams/methodology.png`
-- Architecture diagram: `diagrams/architecture.png`
+## Current Phase
 
-## Planned Project Structure
+This repository currently focuses on research and documentation.
+
+Completed components include:
+
+- Literature Survey
+- Research Gap Identification
+- Problem Statement
+- Methodology Design
+- Architecture Planning
+- Dataset Analysis
+- Research Paper Collection
+
+Implementation modules will be developed during the next phase.
+
+---
+
+## Repository Structure
 
 ```
 Parkinson-Decision-Support-System
-| README.md
-| requirements.txt
-| .gitignore
-|
-+-- docs
-|   +-- problem_statement.md
-|   +-- objectives.md
-|   +-- literature_survey.md
-|   +-- research_gap.md
-|   +-- methodology.md
-|   +-- architecture.md
-|
-+-- research_papers
-|   +-- Base_Paper.pdf
-|   +-- Paper2.pdf
-|   +-- Paper3.pdf
-|
-+-- datasets
-|   +-- dataset_analysis.md
-|
-+-- diagrams
-|   +-- methodology.png
-|   +-- architecture.png
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── docs
+│   ├── problem_statement.md
+│   ├── objectives.md
+│   ├── literature_survey.md
+│   ├── research_gap.md
+│   ├── methodology.md
+│   └── architecture.md
+│
+├── research_papers
+│   ├── Base_Paper.pdf
+│   ├── Related_Paper_1.pdf
+│   ├── Related_Paper_2.pdf
+│   └── ...
+│
+├── datasets
+│   └── dataset_analysis.md
+│
+├── diagrams
+│   ├── methodology.png
+│   └── architecture.png
+│
+├── notebooks
+│
+├── src
+│
+└── models
 ```
+
+
+
+## AI Decision Support Report
+
+The proposed framework generates a structured report containing:
+
+- Parkinson's Disease Prediction
+- Prediction Probability
+- Confidence Score
+- Speech Biomarker Summary
+- Top Contributing Biomarkers
+- SHAP Explainability
+
+---
+
+## Technologies
+
+- Python
+- Scikit-learn
+- XGBoost
+- SHAP
+- Pandas
+- NumPy
+- Matplotlib
+- Jupyter Notebook
+
+---
+
+## Dataset
+
+Primary Dataset:
+
+- Parkinson's Telemonitoring Dataset (UCI)
+
+Benchmark Dataset:
+
+- UCI Parkinson's Disease Dataset
+
+---
 
 ## Team Members
 
-* Nitheesh S
-* Redhani T.V
-* Sabarish K.S
+- Nitheesh S
+- Redhani T.V
+- Sabarish K.S
 
 ---
 
 ## Project Status
 
-**Phase 1:** Literature Survey, Dataset Analysis, Research Gap Identification, and Methodology Design
+### Phase I (Current)
 
-Literature survey details: [LITERATURE_SURVEY.md](LITERATURE_SURVEY.md)
+- Literature Survey
+- Research Gap Identification
+- Dataset Analysis
+- Methodology Design
+- Architecture Design
+
+### Phase II (Upcoming)
+
+- Data Preprocessing
+- Feature Selection
+- Model Development
+- Explainable AI Integration
+- AI Decision Support Report
+- Performance Evaluation
+- Web Application Development
+
 ---
+
+## Expected Outcome
+
+An Explainable AI Decision Support Framework capable of assisting clinicians by providing transparent Parkinson's disease prediction using speech biomarkers along with interpretable machine learning explanations.
+
+---
+
+## License
+
+This repository is intended for academic research and educational purposes.
