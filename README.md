@@ -18,6 +18,17 @@ The following components are included in this phase:
 
 Code implementation folders such as `src/`, `models/`, and `notebooks/` will be added in later phases.
 
+## Quick Links
+
+- Documentation index: `docs/README.md`
+- Literature survey: `docs/literature_survey.md`
+- Research gap: `docs/research_gap.md`
+- Methodology write-up: `docs/methodology.md`
+- Architecture write-up: `docs/architecture.md`
+- Dataset analysis: `datasets/dataset_analysis.md`
+- Methodology diagram: `diagrams/methodology.png`
+- Architecture diagram: `diagrams/architecture.png`
+
 ## Planned Project Structure
 
 ```
