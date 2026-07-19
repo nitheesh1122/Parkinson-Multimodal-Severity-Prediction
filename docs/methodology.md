@@ -1,34 +1,39 @@
 # Proposed Methodology Workflow
 
-## Workflow Stages
+## Workflow Stages (As in Diagram)
 
-1. Data Collection
-- Acquire speech recordings and associated labels.
-- Maintain subject-level identifiers for leakage-safe splitting.
+1. Parkinson's Speech Dataset
+- Use speech recordings and biomedical voice measurements from healthy individuals and Parkinson's Disease patients.
 
 2. Data Preprocessing
-- Perform signal quality checks and normalization.
-- Handle imbalance and remove noisy outliers where justified.
+- Clean missing values and normalize features using `StandardScaler`.
+- Balance class distribution using `KMeansSMOTE`.
 
-3. Feature Engineering
-- Extract core voice biomarkers (Jitter, Shimmer, HNR, RPDE, DFA, PPE).
-- Prepare additional derived features where they improve generalization.
+3. Feature Selection
+- Apply `Recursive Feature Elimination (RFE)` with `XGBoost` feature importance.
+- Select the most informative speech biomarkers.
 
-4. Feature Selection
-- Use filtering and model-driven ranking (for example RFE and tree-based importance).
-- Retain compact, clinically meaningful feature subsets.
+4. Selected Speech Biomarkers
+- Build the optimized subset including `Jitter`, `Shimmer`, `HNR`, `RPDE`, `DFA`, `PPE`, and `NHR`.
 
-5. Model Training
-- Train baseline and ensemble classifiers.
-- Use cross-validation with subject-aware splitting.
+5. XGBoost Classifier
+- Train the model using selected speech biomarkers to separate healthy and Parkinson's classes.
 
-6. Explainability Layer
-- Apply SHAP to explain prediction contributions.
-- Map high-impact biomarkers to clinician-readable notes.
+6. Parkinson's Disease Prediction
+- Predict class label (Healthy or Parkinson's Disease) and compute prediction probability.
 
-7. Decision Support Output
-- Generate structured summary with predicted class, confidence, key biomarkers, and interpretation.
+7. SHAP Explainability
+- Quantify contribution of each speech biomarker using SHAP values.
 
-## Expected Deliverable
+8. AI Decision Support Report
+- Generate a structured report containing:
+	- prediction result,
+	- prediction probability,
+	- confidence score,
+	- speech biomarker summary,
+	- top contributing biomarkers,
+	- SHAP explanation.
 
-A reproducible prediction-and-explanation pipeline that supports clinical interpretation instead of only returning a model label.
+## Outcome
+
+This workflow bridges model prediction and clinician usability by converting technical output into an explainable decision support report.
