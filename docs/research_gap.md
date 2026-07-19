@@ -1,18 +1,14 @@
-# Research Gap
-
-## Identified Gaps From Existing Studies
-
-- Most models are limited to binary detection (PD vs non-PD) rather than decision support.
-- Explainability is often restricted to feature importance plots and not translated to clinical summaries.
-- Predictions are rarely accompanied by confidence-oriented interpretation for practitioners.
-- Existing pipelines do not consistently generate structured reports combining risk score, key biomarkers, and interpretation.
-- Clinical usability is limited because outputs are model-centric rather than clinician-centric.
-
 ## Gap Addressed in This Project
 
-This project targets an explainable decision support layer that connects model prediction with a structured report containing:
+The proposed work extends existing speech-based Parkinson's Disease prediction systems by integrating an Explainable AI Decision Support Report.
 
-- prediction outcome and confidence,
-- top contributing speech biomarkers,
-- SHAP-based interpretation,
-- concise clinical recommendation notes.
+The report will summarize:
+
+- Prediction Result
+- Prediction Probability
+- Confidence Score
+- Speech Biomarker Summary
+- Top Contributing Biomarkers
+- SHAP-based Patient-specific Explanation
+
+The objective is to improve transparency and interpretability while supporting healthcare professionals during clinical assessment. The system is intended to assist decision-making and should not be used as a standalone diagnostic tool.

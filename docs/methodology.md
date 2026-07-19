@@ -36,4 +36,4 @@
 
 ## Outcome
 
-This workflow bridges model prediction and clinician usability by converting technical output into an explainable decision support report.
+The proposed methodology transforms speech-based machine learning predictions into an Explainable AI Decision Support Report that provides transparent, interpretable, and structured information for healthcare professionals.

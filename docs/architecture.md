@@ -15,12 +15,12 @@
 - SHAP-based contribution analysis.
 - Biomarker-level interpretation mapping.
 
-4. Decision Support Layer
+4. AI Decision Support Layer
 - Structured report generation:
   - prediction result,
   - confidence summary,
   - top features,
-  - interpretation notes.
+  - SHAP-based explanation summary.
 
 5. Documentation and Governance Layer
 - Literature and gap traceability.
