@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+sounddevice
+praat-parselmouth
+scikit-learn
+xgboost
+shap
+matplotlib

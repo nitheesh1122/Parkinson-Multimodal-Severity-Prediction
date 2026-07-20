@@ -1,12 +1,21 @@
+"""Extract speech biomarkers from the recorded voice sample."""
+
+from pathlib import Path
+
 import parselmouth
 from parselmouth.praat import call
 import pandas as pd
+
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+INPUT_AUDIO_PATH = PROJECT_ROOT / "samples" / "voice.wav"
+OUTPUT_CSV_PATH = PROJECT_ROOT / "datasets" / "processed" / "features.csv"
 
 # ----------------------------
 # Load the recorded voice
 # ----------------------------
 
-sound = parselmouth.Sound("voice.wav")
+sound = parselmouth.Sound(str(INPUT_AUDIO_PATH))
 
 # ----------------------------
 # Pitch
@@ -193,6 +202,6 @@ df = pd.DataFrame([features])
 print("\nExtracted Features\n")
 print(df)
 
-df.to_csv("features.csv", index=False)
+df.to_csv(OUTPUT_CSV_PATH, index=False)
 
-print("\nFeatures saved to features.csv")
+print(f"\nFeatures saved to {OUTPUT_CSV_PATH}")

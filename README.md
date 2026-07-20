@@ -39,39 +39,42 @@ Implementation modules will be developed during the next phase.
 ## Repository Structure
 
 ```
-Parkinson-Decision-Support-System
-│
+Project/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-│
-├── docs
+├── docs/
 │   ├── problem_statement.md
 │   ├── objectives.md
 │   ├── literature_survey.md
 │   ├── research_gap.md
 │   ├── methodology.md
 │   └── architecture.md
-│
-├── research_papers
-│   ├── Base_Paper.pdf
-│   ├── Related_Paper_1.pdf
-│   ├── Related_Paper_2.pdf
-│   └── ...
-│
-├── datasets
-│   └── dataset_analysis.md
-│
-├── diagrams
-│   ├── methodology.png
-│   └── architecture.png
-│
-├── notebooks
-│
-├── src
-│
-└── models
+├── research_papers/
+├── datasets/
+│   ├── dataset_analysis.md
+│   ├── raw/
+│   └── processed/
+│       └── features.csv
+├── diagrams/
+│   ├── Architecture.png
+│   └── Methodology.png
+├── src/
+│   ├── record.py
+│   ├── extract_features.py
+│   ├── preprocessing.py
+│   ├── feature_selection.py
+│   ├── train_model.py
+│   ├── predict.py
+│   ├── explain.py
+│   └── report.py
+├── models/
+├── outputs/
+└── samples/
+	└── voice.wav
 ```
+
+Legacy reference assets remain in the repository root for convenience, including `Base Papers/` and `PPT/`.
 
 
 
