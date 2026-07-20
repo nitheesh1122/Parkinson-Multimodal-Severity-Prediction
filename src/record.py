@@ -9,6 +9,7 @@ from scipy.io.wavfile import write
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SAMPLES_DIR = PROJECT_ROOT / "samples"
 SAMPLES_DIR.mkdir(parents=True, exist_ok=True)
+VOICE_SAMPLE = SAMPLES_DIR / "voice.wav"
 
 fs = 44100
 duration = 5
@@ -24,7 +25,6 @@ recording = sd.rec(
 
 sd.wait()
 
-output_path = SAMPLES_DIR / "voice.wav"
-write(str(output_path), fs, recording)
+write(str(VOICE_SAMPLE), fs, recording)
 
-print(f"Recording saved to {output_path}")
+print(f"Recording saved to {VOICE_SAMPLE}")

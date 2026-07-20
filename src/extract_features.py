@@ -8,14 +8,15 @@ import pandas as pd
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-INPUT_AUDIO_PATH = PROJECT_ROOT / "samples" / "voice.wav"
-OUTPUT_CSV_PATH = PROJECT_ROOT / "datasets" / "processed" / "features.csv"
+VOICE_SAMPLE = PROJECT_ROOT / "samples" / "voice.wav"
+PROCESSED_DIR = PROJECT_ROOT / "datasets" / "processed"
+OUTPUT_CSV_PATH = PROCESSED_DIR / "features.csv"
 
 # ----------------------------
 # Load the recorded voice
 # ----------------------------
 
-sound = parselmouth.Sound(str(INPUT_AUDIO_PATH))
+sound = parselmouth.Sound(str(VOICE_SAMPLE))
 
 # ----------------------------
 # Pitch
@@ -202,6 +203,7 @@ df = pd.DataFrame([features])
 print("\nExtracted Features\n")
 print(df)
 
+PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 df.to_csv(OUTPUT_CSV_PATH, index=False)
 
 print(f"\nFeatures saved to {OUTPUT_CSV_PATH}")
