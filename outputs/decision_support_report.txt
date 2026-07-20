@@ -1,0 +1,15 @@
+AI DECISION SUPPORT REPORT
+
+Prediction: Parkinson's Disease
+Prediction Probability: 0.9978
+Confidence Score: 0.9957
+Top 5 Important Biomarkers:
+- motor_UPDRS: SHAP 8.4139
+- test_time: SHAP -1.2028
+- subject#: SHAP -0.5798
+- Jitter:DDP: SHAP -0.2904
+- sex: SHAP 0.2213
+SHAP Interpretation:
+- Positive SHAP values support the Parkinson's Disease class.
+- Negative SHAP values support the Healthy class.
+Date Generated: 2026-07-20 09:58:37
